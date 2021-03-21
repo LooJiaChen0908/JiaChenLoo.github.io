@@ -1,0 +1,277 @@
+<!-- Name: Loo Jia Chen 
+     Student Id: D200124B
+     Batch: CS20-B
+     Assignment 2 22/3/2021
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      body, html {
+        height: 100%;
+      }
+              
+      .heading {
+        font-size: 25px;
+        margin-right: 25px;
+      }
+
+      .fa {
+        font-size: 25px;
+      }
+
+      .checked {
+        color: orange;
+      }
+
+      /* Three column layout */
+      .side {
+        float: left;
+        width: 15%;
+        margin-top:10px;
+      }
+
+      .middle {
+        margin-top:10px;
+        float: left;
+        width: 70%;
+      }
+
+      /* Place text to the right */
+      .right {
+        text-align: right;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* The bar container */
+      .bar-container {
+        width: 100%;
+        background-color: #f1f1f1;
+        text-align: center;
+        color: white;
+      }
+
+      .ingredient{
+        padding-left: 10%;
+        padding-top: 5%;
+        height: 95%;
+      }
+
+      footer{
+        text-align: center;
+      }
+
+      /* Individual bars */
+        .bar-5 {width: 57%; height: 18px; background-color: #4CAF50;}
+        .bar-4 {width: 27%; height: 18px; background-color: #2196F3;}
+        .bar-3 {width: 5%; height: 18px; background-color: #00bcd4;}
+        .bar-2 {width: 3%; height: 18px; background-color: #ff9800;}
+        .bar-1 {width: 7%; height: 18px; background-color: #f44336;}
+
+      /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+        @media only screen and (max-device-width: 1366px) {
+          .parallax {
+            background-attachment: scroll;
+          }
+          .side, .middle {
+            width: 100%;
+          }
+          .right {
+            display: none;
+                }
+          }
+    </style>
+  </head>
+
+  <body>
+    <div class="topnav">
+      <a class="active" href="index.html">Home</a>
+      <a href="cake.html">Cake</a>
+      <a href="Pudding.html">Dessert</a>
+      <a href="drinks.html">Drinks</a>
+    </div>
+
+    <div class="Drinks" style="color: #5ffadd; margin-top: 2%;">
+      <h2><i class="fa fa-book">&nbsp INTRODUCTION</i></h2>
+      <h2>Cold-Brewed Coffee</h2>
+      <p>Coffee brewed slowly in cold water is less acidic than hot brewed. You can use this concentrate straight over ice or microwave half a mug coffee and then add a half cup of boiling water for quick hot coffee. Develop your own ratio of coffee to water for your custom brew.</p>
+    </div>
+
+    <div class="ingredient" style="background-color: white;font-size: 25px;">
+      <h3>Ingredients</h3>
+      <p><i class="fa fa-arrow-circle-right">½ pound coarsely ground coffee beans</i></p>
+      <p><i class="fa fa-arrow-circle-right">½ cup and tablespoon cold water</i></p>
+      <p><i class="fa fa-arrow-circle-right">cheesecloth</i></p>
+      <p><i class="fa fa-arrow-circle-right">coffee filters</i></p>
+    </div>
+    
+    <div class="Drinks" style="color: #5ffadd;">
+      <h2><i class="fa fa-bookmark">&nbsp DIRECTIONS</i></h2>
+      <ul>
+        Step 1<br/>
+        <li> 
+        Put coffee grounds in a large container. Slowly pour water over the grounds.</li><br/>
+        Step 2<br/>
+        <li> 
+        Cover bowl with plastic wrap and steep at room temperature for 18 to 24 hours.</li><br/>
+        Step 3 <br/>
+        <li> 
+        Line a strainer with several layers of cheesecloth and place atop a pitcher; strain coffee through the cheesecloth into the pitcher. Discard the grounds. To get a clearer brew, strain coffee again through coffee filters. Store in refrigerator.</li><br/>
+      </ul>
+    </div>
+    
+    <div class="ingredient" style="background-color: black;font-size: 20px; color: white;">
+      <p><i class="fa fa-list-ul"><strong>&nbsp NUTRITIONAL INFORMATION</strong></i></p>
+      <p>Servings Per Recipe: 6</p>
+      <p>Calories: 7.6</p>
+      <table style="width: 70%;">
+        <th>
+          <td>% Daily Value *</td>
+          <td></td>
+          <td>&nbsp</td>
+          <td>&nbsp</td>
+          <td></td>
+          <td>% Daily Value *</td>
+        </th>
+        <tr>
+          <td>Protein: 0.4g</td>
+          <td>1 %</td>
+          <td>&nbsp</td>
+          <td>&nbsp</td>
+          <td>&nbsp</td>
+          <td>Carbohydrates: 1.5g</td>
+          <td>1 %</td>
+        </tr>
+        <tr>
+          <td>Niacin Equivalents: 0.8mg</td>
+          <td>7 %</td>
+          <td>&nbsp</td>
+          <td>&nbsp</td>
+          <td>&nbsp</td>
+          <td>Folate: 0.4mcg</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Calcium: 12.9mg</td>
+          <td>1%</td>
+          <td>&nbsp</td>
+          <td>&nbsp</td>
+          <td>&nbsp</td>
+          <td>Iron: 0.2mg</td>
+          <td>1%</td>
+        </tr>
+        <tr>
+          <td>Magnesium: 20.7mg</td>
+          <td>7 %</td>
+          <td>&nbsp</td>
+          <td>&nbsp</td>
+          <td>&nbsp</td>
+          <td>Potassium: 205.9mg</td>
+          <td>6 %</td>
+        </tr>
+        <tr>
+          <td>Sodium: 12.9mg</td>
+          <td>1 %</td>
+          <td>&nbsp</td>
+          <td>&nbsp</td>
+          <td>&nbsp</td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+      <p> * Percent Daily Values are based on a 2,000 calorie diet. Your daily values may be higher or lower depending on your calorie needs.</p>
+      <p> ** Nutrient information is not available for all ingredients. Amount is based on available nutrient data.</p>
+      <p> (-) Information is not currently available for this nutrient. If you are following a medically restrictive diet, please consult your doctor or registered dietitian before preparing this recipe for personal consumption.</p>
+  </div>
+
+  <div class="rating">
+    <span class="heading">User Rating</span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <p>4.2 average based on 249 reviews.</p>
+    <hr style="border:3px solid #f1f1f1">
+    <div class="row">
+      <div class="side">
+        <div>5 star</div>
+      </div>
+      <div class="middle">
+        <div class="bar-container">
+          <div class="bar-5"></div>
+        </div>
+      </div>
+      <div class="side right">
+        <div>143</div>
+      </div>
+      <div class="side">
+        <div>4 star</div>
+      </div>
+      <div class="middle">
+        <div class="bar-container">
+          <div class="bar-4"></div>
+        </div>
+      </div>
+      <div class="side right">
+        <div>67</div>
+      </div>
+      <div class="side">
+        <div>3 star</div>
+      </div>
+      <div class="middle">
+        <div class="bar-container">
+          <div class="bar-3"></div>
+        </div>
+      </div>
+      <div class="side right">
+        <div>13</div>
+      </div>
+      <div class="side">
+        <div>2 star</div>
+      </div>
+      <div class="middle">
+        <div class="bar-container">
+          <div class="bar-2"></div>
+        </div>
+      </div>
+      <div class="side right">
+        <div>8</div>
+      </div>
+      <div class="side">
+        <div>1 star</div>
+      </div>
+      <div class="middle">
+        <div class="bar-container">
+          <div class="bar-1"></div>
+        </div>
+      </div>
+      <div class="side right">
+        <div>18</div>
+      </div>
+    </div>
+  </div>
+  <br/><br/>
+    <footer>
+      <div>
+          Powered by the ESHA Research Database © 2018,
+          ESHA Research, Inc. All Rights Reserved.
+      </div>
+    </footer>
+  </body>
+</html>

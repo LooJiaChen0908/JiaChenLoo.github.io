@@ -1,0 +1,318 @@
+<!-- Name: Loo Jia Chen 
+     Student Id: D200124B
+     Batch: CS20-B
+     Assignment 2 22/3/2021
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Recipe Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+                
+            body, html {
+                height: 100%;
+            }
+            
+            .heading {
+                font-size: 25px;
+                margin-right: 25px;
+            }
+
+            .fa {
+                font-size: 25px;
+            }
+
+            .checked {
+                color: orange;
+            }
+
+            /* Three column layout */
+            .side {
+                float: left;
+                width: 15%;
+                margin-top:10px;
+            }
+
+            .middle {
+                margin-top:10px;
+                float: left;
+                width: 70%;
+            }
+
+            /* Place text to the right */
+            .right {
+                text-align: right;
+            }
+
+            /* Clear floats after the columns */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            /* The bar container */
+            .bar-container {
+                width: 100%;
+                background-color: #f1f1f1;
+                text-align: center;
+                color: white;
+            }
+
+            .ingredient{
+                padding-left: 10%;
+                padding-top: 5%;
+                height: 95%;
+                font-size: 25px;
+            }
+
+            footer{
+                text-align: center;
+            }
+
+            /* Individual bars */
+            .bar-5 {width: 52%; height: 18px; background-color: #4CAF50;}
+            .bar-4 {width: 23%; height: 18px; background-color: #2196F3;}
+            .bar-3 {width: 8%; height: 18px; background-color: #00bcd4;}
+            .bar-2 {width: 6%; height: 18px; background-color: #ff9800;}
+            .bar-1 {width: 10%; height: 18px; background-color: #f44336;}
+
+            /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+                @media only screen and (max-device-width: 1366px) {
+                .parallax {
+                    background-attachment: scroll;
+                }
+                .side, .middle {
+                    width: 100%;
+                }
+                .right {
+                    display: none;
+                }
+                }
+        </style>
+    </head>
+
+    <body>
+        <div class="topnav">
+            <a class="active" href="index.html">Home</a>
+            <a href="cake.html">Cake</a>
+            <a href="Pudding.html">Dessert</a>
+            <a href="drinks.html">Drinks</a>
+        </div>
+
+        <div class="Cake" style="margin-top: 2%; color: #5ffadd;">
+            <h1><i class="fa fa-book">&nbsp INTRODUCTION</i></h1>
+            <h3>Black Forest Cake</h3>
+            <p>Warm, soft and gooey chocolate cakes. Perfect for that ubiquitous chocolate fix. A good-quality bittersweet chocolate is necessary for the succes of these cakes.</p>
+        </div>
+
+        <div class="ingredient" style="background-color: white;  height:95%; font-size:25px ">
+            <h2>Ingredients</h2>
+            <p><i class="fa fa-arrow-circle-right">1 cup white sugar</i></p>
+            <p><i class="fa fa-arrow-circle-right">½ cup butter</i></p>
+            <p><i class="fa fa-arrow-circle-right">2 teaspoons vanilla extract</i></p>
+            <p><i class="fa fa-arrow-circle-right">1 ½ cups all-purpose flour</i></p>
+            <p><i class="fa fa-arrow-circle-right">1 ¾ teaspoons baking powder</i></p>
+            <p><i class="fa fa-arrow-circle-right">½ cup milk</i></p>
+        </div>
+    
+        <div class="Cake" style="color: #5ffadd;">
+            <h2><i class="fa fa-bookmark">&nbsp DIRECTIONS</i></h2>
+            <ul style="list-style-type: disc;">
+                Step 1
+                <li> 
+                Preheat oven to 350 degrees F (175 degrees C). Grease and flour a 9x9 inch pan or line a muffin pan with paper liners. </li><br/><br/>
+                Step 2
+                <li> 
+                In a medium bowl, cream together the sugar and butter. Beat in the eggs, one at a time, then stir in the vanilla. Combine flour and baking powder, add to the creamed mixture and mix well. Finally stir in the milk until batter is smooth. Pour or spoon batter into the prepared pan.</li><br/><br/>
+                Step 3
+                <li> 
+                Bake for 30 to 40 minutes in the preheated oven. For cupcakes, bake 20 to 25 minutes. Cake is done when it springs back to the touch.</li><br/><br/>
+            </ul>
+        </div>
+
+        <div class="ingredient" style="background-color: black; height:95%; font-size: 20px; color: white;">
+            <p><i class="fa fa-list-ul"><strong>&nbsp NUTRITIONAL INFORMATION</strong></i></p>
+            <p>Servings Per Recipe: 12</p>
+            <p>Calories: 208.6</p>
+            <table style="width: 70%;">
+                <th>
+                    <td>% Daily Value *</td>
+                    <td></td>
+                    <td>&nbsp</td>
+                    <td>&nbsp</td>
+                    <td></td>
+                    <td>% Daily Value *</td>
+                </th>
+                <tr>
+                    <td>Protein: 3.1g</td>
+                    <td>6 %</td>
+                    <td>&nbsp</td>
+                    <td>&nbsp</td>
+                    <td>&nbsp</td>
+                    <td>Carbohydrates: 29.4g</td>
+                     <td>10 %</td>
+                </tr>
+                <tr>
+                    <td>Dietary Fiber: 0.4g</td>
+                    <td>2%</td>
+                    <td>&nbsp</td>
+                    <td>&nbsp</td>
+                    <td>&nbsp</td>
+                    <td>Sugars: 17.3g</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Fat: 8.9g</td>
+                    <td>14 %</td>
+                    <td>&nbsp</td>
+                    <td>&nbsp</td>
+                    <td>&nbsp</td>
+                    <td>Saturated Fat: 5.3g</td>
+                    <td>26 %</td>
+                </tr>
+                <tr>
+                    <td>Cholesterol: 52.1mg</td>
+                    <td>17 %</td>
+                    <td>&nbsp</td>
+                    <td>&nbsp</td>
+                    <td>&nbsp</td>
+                    <td>Vitamin A Iu: 296.2IU</td>
+                    <td>6 %</td>
+                </tr>
+                <tr>
+                    <td>Niacin Equivalents: 1.6mg</td>
+                    <td>12 %</td>
+                    <td>&nbsp</td>
+                    <td>&nbsp</td>
+                    <td>&nbsp</td>
+                    <td>Folate: 33.3mcg</td>
+                    <td>8 %</td>
+                </tr>
+                <tr>
+                    <td>Calcium: 60.6mg</td>
+                    <td>6 %</td>
+                    <td>&nbsp</td>
+                    <td>&nbsp</td>
+                    <td>&nbsp</td>
+                    <td>Iron: 1mg</td>
+                    <td>5 %</td>
+                </tr>
+                <tr>
+                    <td>Magnesium: 6mg</td>
+                    <td>2 %</td>
+                    <td>&nbsp</td>
+                    <td>&nbsp</td>
+                    <td>&nbsp</td>
+                    <td>Potassium: 46.9mg</td>
+                    <td>1 %</td>
+                </tr>
+                <tr>
+                    <td>Sodium: 141.8mg</td>
+                    <td>6 %</td>
+                    <td>&nbsp</td>
+                    <td>&nbsp</td>
+                    <td>&nbsp</td>
+                    <td>Thiamin: 0.1mg</td>
+                    <td>13 %</td>
+                </tr>
+                <tr>
+                    <td>Calories From Fat: 79.7</td>
+                    <td></td>
+                    <td>&nbsp</td>
+                    <td>&nbsp</td>
+                    <td>&nbsp</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <p>* Percent Daily Values are based on a 2,000 calorie diet. Your daily values may be higher or lower depending on your calorie needs.</p>
+            <p>** Nutrient information is not available for all ingredients. Amount is based on available nutrient data.</p>
+            <p> (-) Information is not currently available for this nutrient. If you are following a medically restrictive diet, please consult your doctor or registered dietitian before preparing this recipe for personal consumption.</p>
+        </div>
+
+        <div class="rating">
+            <span class="heading">User Rating</span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <p>5.7 average based on 308 reviews.</p>
+            <hr style="border:3px solid #f1f1f1">
+            
+            <div class="row">
+            <div class="side">
+                <div>5 star</div>
+            </div>
+            <div class="middle">
+                <div class="bar-container">
+                <div class="bar-5"></div>
+                </div>
+            </div>
+            <div class="side right">
+                <div>161</div>
+            </div>
+            <div class="side">
+                <div>4 star</div>
+            </div>
+            <div class="middle">
+                <div class="bar-container">
+                <div class="bar-4"></div>
+                </div>
+            </div>
+            <div class="side right">
+                <div>72</div>
+            </div>
+            <div class="side">
+                <div>3 star</div>
+            </div>
+            <div class="middle">
+                <div class="bar-container">
+                <div class="bar-3"></div>
+                </div>
+            </div>
+            <div class="side right">
+                <div>26</div>
+            </div>
+            <div class="side">
+                <div>2 star</div>
+            </div>
+            <div class="middle">
+                <div class="bar-container">
+                <div class="bar-2"></div>
+                </div>
+            </div>
+            <div class="side right">
+                <div>17</div>
+            </div>
+            <div class="side">
+                <div>1 star</div>
+            </div>
+            <div class="middle">
+                <div class="bar-container">
+                <div class="bar-1"></div>
+                </div>
+            </div>
+            <div class="side right">
+                <div>32</div>
+            </div>
+        </div>
+    </div>
+    <br/><br/>
+    <footer>
+        <div>
+            Powered by the ESHA Research Database © 2018,
+            ESHA Research, Inc. All Rights Reserved.
+        </div>
+    </footer>
+    </body>
+</html>
